@@ -39,13 +39,19 @@ Andi ingin menambahkan sistem self-service di supermarket miliknya agar customer
 Membuat aplikasi python kasir self-service sehingga customer/pelanggan bisa menginput barang sendiri sesuai dengan yang mereka inginkan
 
 ### Penjelasan Flowchart
-![alt text]((https://github.com/Ridwanridzi/Pacmann_Kasir/blob/main/flowchart.png))
+![alt text]((https://github.com/Ridwanridzi/Pacmann_Kasir/blob/main/flowchart.png?raw=true))
 
 ### Conclusion
 
 ---
 
 ## Test Case
+
+### Menu Transaksi
+```python
+transaksi = Transaction()
+transaksi.menu()
+```
 
 ### Tambah Barang
 ```python
@@ -142,9 +148,9 @@ transaksi_5.check_order()
 # {'nama_item': [jumlah, harga]}
 transaksi_5.test_case_output(transaksi_5.keranjang)
 ```
-### Reset Transaksi
+### Total Harga
 ```python
-# inisialisasi transaksi dengan instance baru
+# inisialisasi transaksi dengan instance
 transaksi_6 = Transaction()
 
 # menambah item
@@ -156,15 +162,12 @@ transaksi_6.add_items(['tempe', 3, 5_000])
 # {'nama_item': [jumlah, harga]}
 transaksi_6.test_case_output(transaksi_6.keranjang)
 
-# reset transaksi
-transaksi_6.reset_transaction()
-
-# cek pesanan
-transaksi_6.check_order()
+# hitung total belanja (termasuk diskon)
+transaksi_6.total_price()
 ```
-### Total Harga
+### Reset Transaksi
 ```python
-# inisialisasi transaksi dengan instance
+# inisialisasi transaksi dengan instance baru
 transaksi_7 = Transaction()
 
 # menambah item
@@ -176,11 +179,9 @@ transaksi_7.add_items(['tempe', 3, 5_000])
 # {'nama_item': [jumlah, harga]}
 transaksi_7.test_case_output(transaksi_7.keranjang)
 
-# hitung total belanja (termasuk diskon)
-transaksi_7.total_price()
-```
-### Menu Transaksi
-```python
-transaksi = Transaction()
-transaksi.menu()
+# reset transaksi
+transaksi_7.reset_transaction()
+
+# cek pesanan
+transaksi_7.check_order()
 ```
