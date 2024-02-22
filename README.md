@@ -39,7 +39,7 @@ Andi ingin menambahkan sistem self-service di supermarket miliknya agar customer
 Membuat aplikasi python kasir self-service sehingga customer/pelanggan bisa menginput barang sendiri sesuai dengan yang mereka inginkan
 
 ### Penjelasan Flowchart
-![alt text](https://github.com/ZarelLast/Pacmann-SuperCashier/blob/main/flowchart.png?raw=true)
+![alt text]((https://github.com/Ridwanridzi/Pacmann_Kasir/blob/main/flowchart.png))
 
 ### Conclusion
 
