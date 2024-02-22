@@ -10,24 +10,24 @@ Andi ingin menambahkan sistem self-service di supermarket miliknya agar customer
 #### Requirement:
 - **add_item([ <nama_item>, <jumlah_item>, <harga_per_item> ])** <br/>
 &nbsp;Method yang digunakan untuk menambahkan item sesuai dengan data dibawah ini:
-  - **<nama_item>:** attribute nama barang yang akan dibeli oleh customer
-  - **<jumlah_item>:** attribute jumlah barang yang akan dibeli oleh customer
-  - **<harga_per_item>:** attribute harga barang per satuan
+  	- **<nama_item> :** attribute nama barang yang akan dibeli oleh customer
+ 	- **<jumlah_item> :** attribute jumlah barang yang akan dibeli oleh customer
+ 	- **<harga_per_item> :** attribute harga barang per satuan
 - **update_item_name(<id_item>, <update_nama_item>)** <br/>
 &nbsp;Method yang digunakan untuk mengubah nama barang sesuai dengan id barang
-	- **<id_item>:** attribute id barang yang akan diubah oleh customer
-	- **<update_nama_item>:** attribute nama barang yang baru
+	- **<id_item> :** attribute id barang yang akan diubah oleh customer
+	- **<update_nama_item> :** attribute nama barang yang baru
 - **update_item_qty(<id_item>, <update_jumlah_item>)**
 &nbsp;Method yang digunakan untuk mengubah jumlah barang sesuai dengan id barang
-	- **<id_item>**: attribute id barang yang akan diubah oleh customer
-	- **<update_jumlah_item>**: attribute jumlah barang yang baru
+	- **<id_item> :** attribute id barang yang akan diubah oleh customer
+	- **<update_jumlah_item> :** attribute jumlah barang yang baru
 - **update_item_price(<id_item>, <update_harga_item>)**
 &nbsp;Method yang digunakan untuk mengubah harga barang sesuai dengan id barang
-	- **<id_item>**: attribute id barang yang akan diubah oleh customer
-	-	**<update_harga_item>**: attribute harga barang yang baru
+	- **<id_item> :** attribute id barang yang akan diubah oleh customer
+	- **<update_harga_item> :** attribute harga barang yang baru
 - **delete_item(<id_item>)** <br/>
 &nbsp;Method yang digunakan untuk menghapus salah satu atau beberapa item barang dari list keranjang barang yang akan dibeli berdasarkan id barang
-  - **<id_item>:** attribute id barang yang akan dihapus oleh customer
+	- **<id_item> :** attribute id barang yang akan dihapus oleh customer
 - **reset_transaction()** <br/>
 &nbsp;Method yang digunakan untuk menghapus semua barang belanjaan di dalam list keranjang yang tidak akan dibeli
 - **check_order()** <br/>
