@@ -370,13 +370,15 @@ Membuat aplikasi python kasir self-service sehingga customer/pelanggan bisa meng
 ## Test Case
 
 ### Menu Transaksi
-- code
+- Code
 ```python
 transaksi = Transaction()
 transaksi.menu()
 ```
-
+- Output <br/>
+![Menu](screenshots/main_menu.png)
 ### Tambah Barang
+- Code
 ```python
 # inisialisasi transaksi dengan instance
 transaksi_1 = Transaction()
@@ -393,7 +395,11 @@ transaksi_1.check_order()
 # {'nama_item': [jumlah, harga]}
 transaksi_1.test_case_output(transaksi_1.keranjang)
 ```
+- Output <br/>
+![Add Items](screenshots/add_items_1.png)
+![](screenshots/add_items_2.png)
 ### Update Barang
+- Code
 ```python
 # inisialisasi transaksi dengan instance baru
 transaksi_2 = Transaction()
@@ -416,7 +422,11 @@ transaksi_2.update_item_qty(id_item=2, update_jumlah=10)
 # {'nama_item': [jumlah, harga]}
 transaksi_2.test_case_output(transaksi_2.keranjang)
 ```
+- Output <br/>
+![Update Items](screenshots/update_items_1.png)
+![](screenshots/update_items_2.png)
 ### Delete Barang
+- Code
 ```python
 # inisialisasi transaksi dengan instance baru
 transaksi_3 = Transaction()
@@ -433,9 +443,12 @@ transaksi_3.delete_item(2)
 # {'nama_item': [jumlah, harga]}
 transaksi_3.test_case_output(transaksi_3.keranjang)
 ```
+- Output <br/>
+![Delete Item](screenshots/delete_item.png)
 ### Check Order
 
 #### Check tanpa error
+- Code
 ```python
 # inisialisasi transaksi dengan instance baru
 transaksi_4 = Transaction()
@@ -453,7 +466,10 @@ transaksi_4.check_order()
 # {'nama_item': [jumlah, harga]}
 transaksi_4.test_case_output(transaksi_4.keranjang)
 ```
+- Output <br/>
+![Check No Error](screenshots/check_right.png)
 #### Check jika error
+- Code
 ```python
 # inisialisasi transaksi dengan instance baru
 transaksi_5 = Transaction()
@@ -471,7 +487,11 @@ transaksi_5.check_order()
 # {'nama_item': [jumlah, harga]}
 transaksi_5.test_case_output(transaksi_5.keranjang)
 ```
+- Output <br/>
+![Check Error](screenshots/check_wrong_1.png)
+![](screenshots/check_wrong_2.png)
 ### Total Harga
+- Code
 ```python
 # inisialisasi transaksi dengan instance
 transaksi_6 = Transaction()
@@ -488,7 +508,10 @@ transaksi_6.test_case_output(transaksi_6.keranjang)
 # hitung total belanja (termasuk diskon)
 transaksi_6.total_price()
 ```
+- Output <br/>
+![Total Price](screenshots/total_price.png)
 ### Reset Transaksi
+- Code
 ```python
 # inisialisasi transaksi dengan instance baru
 transaksi_7 = Transaction()
@@ -508,3 +531,5 @@ transaksi_7.reset_transaction()
 # cek pesanan
 transaksi_7.check_order()
 ```
+- Output <br/>
+![Reset Transaction](screenshots/reset_transaction.png)
